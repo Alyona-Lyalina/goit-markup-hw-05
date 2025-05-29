@@ -856,7 +856,6 @@ h2 {
 
 .rewiew-form-policy-checkbox:checked
   + .rewiew-form-checkbox-label
-  .privacy-text
-  .icon-checkmark {
+  .privacy-text {
   fill: #f4f4fd;
 }
