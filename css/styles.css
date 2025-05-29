@@ -682,10 +682,6 @@ h2 {
 }
 
 .close-modal-btn-icon {
-  fill: red;
-}
-
-.close-modal-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -714,17 +710,19 @@ h2 {
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding: 12px 40px 12px 38px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
-  outline: none;
 }
 
 .review-form-input:focus {
   border-color: #4d5ae5;
+}
+
+.content-wrapper:focus-within .review-form-field-icon {
+  fill: #4d5ae5;
 }
 
 .review-form-field-icon {
@@ -847,4 +845,26 @@ h2 {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ span {
+  background-color: #404bbf;
+}
+
+.rewiew-form-policy-checkbox:checked
+  + .rewiew-form-checkbox-label
+  .privacy-text {
+  background-color: #404bbf;
+  border: none;
+}
+
+.rewiew-form-policy-checkbox:checked
+  + .rewiew-form-checkbox-label
+  .privacy-text
+  .icon-checkmark {
+  fill: #f4f4fd;
 }
