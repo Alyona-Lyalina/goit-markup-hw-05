@@ -500,7 +500,7 @@
             </label>
             <button class="footer-subscribe-btn" type="submit">
               Subscribe
-              <svg class="icon-check-box" width="24" height="24">
+              <svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -549,7 +549,7 @@
                 class="review-form-input"
                 id="form-phone"
                 name="user-phone"
-                type="user-tel"
+                type="tel"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="xxx-xxx-xx-xx"
                 required
@@ -569,7 +569,7 @@
                 class="review-form-input"
                 id="form-email"
                 name="user-email"
-                type="text"
+                type="email"
                 required
               />
               <svg class="review-form-field-icon" width="18" height="24">
@@ -585,23 +585,24 @@
             <textarea
               class="text-area"
               name="user-comment"
-              id="user-comment"
+              id="form-message"
               placeholder="Text input"
             ></textarea>
           </div>
 
           <div class="review-form-checkbox-wrapper">
-            <input class="rewiew-form-policy-checkbox" type="checkbox" />
+            <input
+              class="rewiew-form-policy-checkbox"
+              type="checkbox"
+              id="form-privacy-checkbox"
+            />
             <label
               class="review-form-checkbox-label"
               for="form-privacy-checkbox"
-              id="user-privacy"
-              value="true"
-              name="user-privacy"
             >
               <span class="privacy-text"
                 >I accept the terms and conditions of the
-                <a class="privacy-link">Privacy Policy</a></span
+                <a class="privacy-link" href="#">Privacy Policy</a></span
               >
               <svg class="" width="16" height="16">
                 <use href="./images/icons.svg#icon_checkmark"></use>
