@@ -847,14 +847,6 @@ h2 {
   fill: transparent;
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
-input[type="checkbox"]:checked ~ span {
-  background-color: #404bbf;
-}
-
 .rewiew-form-policy-checkbox:checked
   + .rewiew-form-checkbox-label
   .privacy-text {
