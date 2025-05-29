@@ -581,7 +581,22 @@ h2 {
   margin-right: 24px;
   background-color: #2e2f42;
   padding: 8px 16px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
+
+.footer-email-input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
 .footer-subscribe-btn {
   display: flex;
   align-items: center;
@@ -590,7 +605,7 @@ h2 {
   border-radius: 4px;
   background: #4d5ae5;
   color: #ffffff;
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.04em;
   font-weight: 500;
   font-size: 16px;
@@ -598,6 +613,9 @@ h2 {
   border: none;
   cursor: pointer;
   width: 165px;
+}
+.icon-check-box {
+  fill: #ffffff;
 }
 
 /*========Form section========*/
@@ -689,6 +707,11 @@ h2 {
 
 .review-slogan {
   margin: 72px 24px 0px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 16px;
 }
 
 .review-form-checkbox-wrapper {
@@ -712,6 +735,16 @@ h2 {
   resize: none;
 }
 
+.text-area::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #2e2f4266;
+  padding: 8px 0 0 16px;
+}
+
 .privacy-link {
   text-decoration: underline;
   text-decoration-skip-ink: none;
@@ -719,13 +752,15 @@ h2 {
 }
 
 .review-form-submit-btn {
+  font-family: "Roboto", sans-serif;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
   border: none;
+  cursor: pointer;
 
   font-weight: 500;
   font-size: 16px;
@@ -733,6 +768,8 @@ h2 {
   letter-spacing: 0.04em;
   text-align: center;
   color: #ffffff;
-
-  margin-bottom: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* margin-bottom: 24px; */
+  margin: 0 auto 24px;
+  display: block;
 }
