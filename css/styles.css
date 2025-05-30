@@ -613,6 +613,12 @@ h2 {
   min-width: 165px;
   justify-content: center;
 }
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background-color: #404bbf;
+}
+
 .icon-send {
   fill: #ffffff;
   margin-left: 16px;
